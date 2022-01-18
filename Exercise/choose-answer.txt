@@ -1,0 +1,7 @@
+Mục tiêu:
+    Sử dụng Overmouse bng <script>.
+    Luyện tập bắt sự kiện.
+    Thay đổi màu sắc đối tượng.
+Giải thích:
+    khi nhấp chuột vào đáp án sẽ hiện lên kết quả đúng sai.
+    khi nộp đúng đáp án sẽ thông báo kết quả chính xác,

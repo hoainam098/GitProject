@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>chon cau tra loi</title>
+    <style>
+        .d1{
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+<h3 id="q1">Câu hỏi: <br> Có 5 quả táo Sơn cho Lâm 2 quả hỏi Sơn còn mấy quả táo?</h3>
+<h4>a. 4; b. 5; c. 1; d.3;</h4>
+<div class="d1">
+    <span id="a">a</span>
+    <span id="b">b</span>
+    <span id="c">c</span>
+    <span id="d">d</span>
+</div>
+<p>Bạn có thể nhập đáp án là số tại đây.</p>
+<input id="asw" type="text">
+<button id="sm-btn" type="submit" onclick="ketqua">Nop</button>
+<script>
+    var incorrect = document.getElementById('a');
+    incorrect.addEventListener('click',sai);
+    var incorrect = document.getElementById('b');
+    incorrect.addEventListener('click',sai);
+    var incorrect = document.getElementById('c');
+    incorrect.addEventListener('click',sai);
+    var incorrect = document.getElementById('d');
+    incorrect.addEventListener('click',dung);
+
+
+    function sai() {
+        alert('Đáp án bạn chọn không đúng.');
+
+    }
+    function dung() {
+        alert('Xin chúc mừng. Đáp án chính xác.')
+
+    }
+</script>
+<!--<script>-->
+<!--    var asw=document.getElementById(asw);-->
+<!--    if (asw=5,ketqua());-->
+<!--        else(sai());-->
+<!--    function ketqua() {-->
+
+<!--        alert('Đáp chính xác bằng 3')-->
+
+    }
+</script>
+</body>
+</html>
