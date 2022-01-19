@@ -7,6 +7,9 @@
         .d1{
             padding: 5px;
         }
+        .hidden{
+            display: none;
+        }
     </style>
 </head>
 <body>
@@ -19,8 +22,8 @@
     <span id="d">d</span>
 </div>
 <p>Bạn có thể nhập đáp án là số tại đây.</p>
-<input id="asw" type="text">
-<button id="sm-btn" type="submit" onclick="ketqua">Nop</button>
+<input id="asw" type="number">
+<button id="btn" type="button" onclick="ketqua()">Send</button>
 <script>
     var incorrect = document.getElementById('a');
     incorrect.addEventListener('click',sai);
@@ -38,18 +41,18 @@
     }
     function dung() {
         alert('Xin chúc mừng. Đáp án chính xác.')
-
     }
-</script>
-<!--<script>-->
-<!--    var asw=document.getElementById(asw);-->
-<!--    if (asw=5,ketqua());-->
-<!--        else(sai());-->
-<!--    function ketqua() {-->
+    </script>
+<script>
+    var dapan=document.getElementById('asw');
 
-<!--        alert('Đáp chính xác bằng 3')-->
+       function ketqua() {
+           if (dapan.value == 3) {
+            alert('Kết quả chính xác bằng 3.')
+        } else {
+            alert('Bạn nhập sai rồi.')
+        }}
 
-    }
 </script>
 </body>
 </html>
