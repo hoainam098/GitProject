@@ -1,7 +1,18 @@
-var result=document.getElementById('asw');
-        function ads() {
-        if (result.value == 3) {
+var mo = document.querySelector('.d2')
+
+mo.addEventListener('mouseover',function () {
+    mo.classList.add('open')
+    console.log(this);
+
+})
+
+var dapan=document.getElementById('asw');
+document.getElementById('btn').addEventListener('click',
+    function ketqua() {
+        if (dapan.value == 3) {
             alert('Kết quả chính xác bằng 3.')
         } else {
-            alert('Kết quả bạn nhập chưa chính xác rồi.')
-        }}
+            alert('Bạn nhập sai rồi.');
+        }
+    })
+

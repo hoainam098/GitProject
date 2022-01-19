@@ -4,4 +4,12 @@ Mục tiêu:
     Thay đổi màu sắc đối tượng.
 Giải thích:
     khi nhấp chuột vào đáp án sẽ hiện lên kết quả đúng sai.
-    khi nộp đúng đáp án sẽ thông báo kết quả chính xác,
+    khi nộp đúng đáp án sẽ thông báo kết quả chính xác.
+    Html:
+        Câu hỏi <h3 id=q1>
+        Đáp án <h4>
+        <div class=d1>
+            04 đáp án <span id=a,b,c,d>
+    Nhập đáp án <p>
+    <div class=d2>
+         <input id=asw> <button id=btn onclick=ketqua>

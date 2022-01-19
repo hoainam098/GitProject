@@ -11,6 +11,7 @@
             display: none;
         }
     </style>
+    <link rel="stylesheet" href="choose-answer.css">
 </head>
 <body>
 <h3 id="q1">Câu hỏi: <br> Có 5 quả táo Sơn cho Lâm 2 quả hỏi Sơn còn mấy quả táo?</h3>
@@ -22,8 +23,10 @@
     <span id="d">d</span>
 </div>
 <p>Bạn có thể nhập đáp án là số tại đây.</p>
-<input id="asw" type="number">
-<button id="btn" type="button" onclick="ketqua()">Send</button>
+<div class="d2">
+    <input id="asw" type="number">
+    <button id="btn" type="button" onclick="ketqua()">Send</button>
+</div>
 <script>
     var incorrect = document.getElementById('a');
     incorrect.addEventListener('click',sai);
@@ -44,15 +47,17 @@
     }
     </script>
 <script>
-    var dapan=document.getElementById('asw');
-
-       function ketqua() {
-           if (dapan.value == 3) {
-            alert('Kết quả chính xác bằng 3.')
-        } else {
-            alert('Bạn nhập sai rồi.')
-        }}
+    // var dapan=document.getElementById('asw');
+    //
+    //    function ketqua() {
+    //        if (dapan.value == 3) {
+    //        addEventListener('m')
+    //         alert('Kết quả chính xác bằng 3.')
+    //     } else {
+    //         alert('Bạn nhập sai rồi.')
+    //     }}
 
 </script>
 </body>
+<script src="choose-answer.js"></script>
 </html>
